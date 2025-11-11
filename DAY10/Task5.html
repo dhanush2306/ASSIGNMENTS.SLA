@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Example</title>
+  <style>
+    body {
+      height: 150vh; 
+      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      position: relative; 
+      background: #fff;
+      border: 2px solid #ccc;
+      padding: 20px;
+      height: 300px;
+    }
+
+   
+    .box1 {
+      width: 120px;
+      height: 120px;
+      background-color: #0077b6;
+      color: #fff;
+      text-align: center;
+      line-height: 120px;
+      font-weight: bold;
+      position: relative;
+      top: 30px;
+      left: 30px;
+    }
+
+    
+    .box2 {
+      width: 120px;
+      height: 120px;
+      background-color: #ff7f50;
+      color: #fff;
+      text-align: center;
+      line-height: 120px;
+      font-weight: bold;
+      position: absolute;
+      top: 100px;
+      right: 50px;
+    }
+
+   
+    .box3 {
+      width: 120px;
+      height: 120px;
+      background-color: #32cd32;
+      color: #fff;
+      text-align: center;
+      line-height: 120px;
+      font-weight: bold;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Positioning: Relative, Absolute, and Fixed</h2>
+  <p>Scroll the page to see how the fixed box stays in place.</p>
+
+  <div class="container">
+    <div class="box1">Relative</div>
+    <div class="box2">Absolute</div>
+  </div>
+
+  <div class="box3">Fixed</div>
+
+</body>
+</html>

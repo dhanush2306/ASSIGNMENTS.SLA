@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Background Banner</title>
+  <style>
+   
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    
+    .banner {
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80');
+      background-attachment: fixed; 
+      background-size: cover;       
+      background-position: center;  
+      height: 100vh;                
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner-content {
+      background: rgba(0, 0, 0, 0.5); 
+      padding: 40px 60px;
+      border-radius: 10px;
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 20px;
+    }
+
+    .content {
+      background: #f9f9f9;
+      color: #333;
+      padding: 60px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Welcome to My Website</h1>
+      <p>Scroll down to see the fixed background effect</p>
+    </div>
+  </section>
+
+  <div class="content">
+    <h2>About Section</h2>
+    <p>
+      This section demonstrates how the background image in the banner stays fixed 
+      while the rest of the content scrolls. It creates a modern parallax-like effect 
+      using just CSS — no JavaScript needed!
+    </p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Boxes with Text</title>
+  <style>
+    body {
+      height: 150vh; 
+      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      position: relative; 
+      background: #fff;
+      border: 2px solid #ccc;
+      padding: 20px;
+      height: 350px;
+      border-radius: 10px;
+    }
+
+   
+    .box {
+      width: 200px;
+      padding: 15px;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+   
+    .box1 {
+      background-color: #0077b6;
+      position: relative;
+      top: 30px;
+      left: 30px;
+    }
+
+  
+    .box2 {
+      background-color: #ff7f50;
+      position: absolute;
+      top: 120px;
+      right: 50px;
+    }
+
+    
+    .box3 {
+      background-color: #32cd32;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 220px;
+    }
+
+   
+    .box p {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.4;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Positioning with Text Content</h2>
+  <p>Scroll down to see how the fixed box stays in place.</p>
+
+  <div class="container">
+    <div class="box box1">
+      <h3>Relative Box</h3>
+      <p>This box moves slightly from its normal position using <strong>top</strong> and <strong>left</strong>, but still affects layout flow.</p>
+    </div>
+
+    <div class="box box2">
+      <h3>Absolute Box</h3>
+      <p>This box is positioned relative to the container. It doesn’t affect other elements’ layout.</p>
+    </div>
+  </div>
+
+  <div class="box box3">
+    <h3>Fixed Box</h3>
+    <p>This box stays fixed at the bottom-right corner even when you scroll the page.</p>
+  </div>
+
+</body>
+</html>

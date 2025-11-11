@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Shadow & Transformation Example</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: #fff;
+      padding-top: 80px;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 48px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .text-samples {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .text {
+      width: 220px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .text:hover {
+      transform: scale(1.1) rotate(-3deg);
+    }
+
+    .shadow1 {
+      text-shadow: 2px 2px 4px #000000;
+      text-transform: capitalize;
+    }
+
+    .shadow2 {
+      text-shadow: 0 0 8px #ffcc00;
+      text-transform: lowercase;
+    }
+
+    .shadow3 {
+      text-shadow: 4px 4px 10px #ff3366;
+      text-transform: uppercase;
+    }
+
+    .shadow4 {
+      text-shadow: -3px -3px 5px #00ffcc;
+      text-transform: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Text Shadows & Transformations</h1>
+
+  <div class="text-samples">
+    <div class="text shadow1">Soft black shadow</div>
+    <div class="text shadow2">Glowing yellow text</div>
+    <div class="text shadow3">Deep pink shadow</div>
+    <div class="text shadow4">Cool cyan offset</div>
+  </div>
+
+</body>
+</html>
