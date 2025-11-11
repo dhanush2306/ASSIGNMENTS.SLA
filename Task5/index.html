@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box-Sizing Example</title>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      border: 5px solid #333;
+      background-color: #fff;
+    }
+
+    .content-box {
+      box-sizing: content-box;
+      background-color: #ffcccb; 
+    }
+
+    .border-box {
+      box-sizing: border-box;
+      background-color: #add8e6; 
+    }
+
+    .label {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Box-Sizing: content-box vs border-box</h2>
+
+  <div class="container">
+    <div>
+      <div class="label">content-box (default)</div>
+      <div class="box content-box">
+        The total size = width + padding + border
+      </div>
+    </div>
+
+    <div>
+      <div class="label">border-box</div>
+      <div class="box border-box">
+        The total size = width (includes padding + border)
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

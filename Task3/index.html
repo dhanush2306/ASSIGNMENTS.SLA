@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padding Comparison Example</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      width: 250px;
+      height: 120px;
+      border: 3px solid #333;
+      background-color: #fff;
+      margin: 30px;
+    }
+
+    .box1 {
+      padding: 10px;
+      background-color: #ffe4e1; 
+    }
+
+    .box2 {
+      padding: 40px;
+      background-color: #add8e6; 
+    }
+
+    .label {
+      font-weight: bold;
+      margin-left: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Comparison of Padding Effect</h2>
+
+  <div class="label">Box 1 (padding: 10px)</div>
+  <div class="box box1">
+    The content is closer to the border because padding is smaller.
+  </div>
+
+  <div class="label">Box 2 (padding: 40px)</div>
+  <div class="box box2">
+    The content moves inward because padding is larger.
+  </div>
+
+</body>
+</html>
