@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Two-Column Layout</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+   
+    .column {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Responsive Two-Column Layout</h1>
+
+  <div class="container">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>
+        This is the first column. On larger screens, it sits side-by-side with the second column.
+        On mobile devices, it stacks on top.
+      </p>
+    </div>
+
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>
+        This is the second column. Resize your browser window to see how the layout changes 
+        from two columns to one.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

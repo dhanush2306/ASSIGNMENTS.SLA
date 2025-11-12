@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page Layout</title>
+  <style>
+   
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f2f4f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    
+    .profile-page {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    
+    header {
+      grid-area: header;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    
+    aside {
+      grid-area: sidebar;
+      background: #fff;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    aside img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #00f2fe;
+    }
+
+    aside h2 {
+      margin: 10px 0 5px;
+    }
+
+    aside p {
+      font-size: 14px;
+      color: #777;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sidebar-links {
+      width: 100%;
+    }
+
+    .sidebar-links a {
+      display: block;
+      padding: 10px 15px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      transition: background 0.3s;
+    }
+
+    .sidebar-links a:hover {
+      background: #e6f3ff;
+      color: #0088cc;
+    }
+
+    
+    main {
+      grid-area: main;
+      background: #fff;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .card {
+      background: #f9fbfc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h3 {
+      color: #0088cc;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      grid-area: footer;
+      text-align: center;
+      background: #4facfe;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .profile-page {
+        grid-template-areas:
+          "header"
+          "sidebar"
+          "main"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+
+      aside img {
+        margin-right: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="profile-page">
+    
+    <header>
+      🌟 My Profile Page
+    </header>
+
+    <aside>
+      <img src="https://via.placeholder.com/120" alt="Profile Picture">
+      <h2>John Doe</h2>
+      <p>Web Developer & Designer</p>
+
+      <div class="sidebar-links">
+        <a href="#">🏠 Dashboard</a>
+        <a href="#">📁 Projects</a>
+        <a href="#">💬 Messages</a>
+        <a href="#">⚙️ Settings</a>
+      </div>
+    </aside>
+
+    <main>
+      <div class="card">
+        <h3>About Me</h3>
+        <p>
+          Passionate full-stack developer with experience in building responsive websites and web apps using modern technologies.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Skills</h3>
+        <p>HTML, CSS, JavaScript, React, Node.js, MongoDB, and more.</p>
+      </div>
+
+      <div class="card">
+        <h3>Recent Projects</h3>
+        <p>Portfolio Website, E-commerce App, Task Manager, Chat Application.</p>
+      </div>
+
+      <div class="card">
+        <h3>Contact Info</h3>
+        <p>Email: johndoe@example.com<br>Phone: +91 98765 43210</p>
+      </div>
+    </main>
+
+    <footer>
+      © 2025 John Doe — All Rights Reserved
+    </footer>
+
+  </div>
+
+</body>
+</html>

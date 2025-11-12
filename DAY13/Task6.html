@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #004b80;
+    }
+
+    
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      background-color: white;
+    }
+
+    .hero-text {
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      background: #00b4d8;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero-text button:hover {
+      background: #0077b6;
+    }
+
+    .hero img {
+      width: 300px;
+      border-radius: 50%;
+      border: 5px solid #4facfe;
+      margin-top: 20px;
+    }
+
+    
+    .portfolio {
+      padding: 60px 20px;
+      background: #f0f4f8;
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .project h3 {
+      margin: 15px 0 10px;
+      color: #0077b6;
+    }
+
+    
+    .contact {
+      background: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .contact a {
+      display: inline-block;
+      background: #00b4d8;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #0077b6;
+    }
+
+    footer {
+      background: #4facfe;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+   
+    @media (max-width: 900px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero img {
+        width: 220px;
+      }
+    }
+
+   
+    @media (max-width: 600px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero-text h2 {
+        font-size: 1.8rem;
+      }
+
+      .hero-text p {
+        font-size: 0.9rem;
+      }
+
+      .contact h2 {
+        font-size: 1.5rem;
+      }
+
+      .contact p {
+        font-size: 0.9rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+ 
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm Dhanush 👋</h2>
+      <p>I’m a passionate front-end developer who loves building responsive and creative websites using HTML, CSS, and JavaScript.</p>
+      <button>View My Work</button>
+    </div>
+    <img src="https://via.placeholder.com/300" alt="Profile Picture">
+  </section>
+
+ 
+  <section class="portfolio">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Responsive website built using HTML, CSS, and Flexbox.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Interactive UI using JavaScript and animations.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>Portfolio site created with modern CSS Grid layout.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="contact">
+    <h2>Get In Touch</h2>
+    <p>Feel free to reach out if you’d like to collaborate or just say hi!</p>
+    <a href="mailto:dhanush@example.com">Contact Me</a>
+  </section>
+
+  
+  <footer>
+    © 2025 Dhanush | Built with ❤️ using HTML & CSS
+  </footer>
+
+</body>
+</html>

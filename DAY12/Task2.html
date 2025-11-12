@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Image with Clearfix Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+   
+    .container::after {
+      content: "";
+      display: table;
+      clear: both; 
+    }
+
+    
+    .container img {
+      float: left;
+      margin-right: 15px;
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #555;
+    }
+
+    .text {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Float Image Beside Text with Clearfix</h1>
+
+  <div class="container">
+    <img src="https://via.placeholder.com/200" alt="Sample Image">
+    <div class="text">
+      <p>
+        This is an example of how to float an image beside text using the <code>float</code> property in CSS.
+        The image is floated to the left, allowing the text to wrap around it naturally.
+      </p>
+      <p>
+        Without a clearfix, the parent container might collapse since floated elements are taken out of the normal document flow.
+        Here, we use the <code>::after</code> pseudo-element with <code>clear: both;</code> to fix the layout.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

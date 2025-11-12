@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Hero Section using vh & vw</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+  
+    .hero {
+      height: 100vh; 
+      width: 100vw;  
+      background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.3)),
+                  url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 5vw;
+    }
+
+    .hero h1 {
+      font-size: 6vw; 
+      margin-bottom: 1vh;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 2vw;
+      max-width: 800px;
+      margin-bottom: 4vh;
+    }
+
+    .hero button {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #ff4757;
+    }
+
+  
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 9vw;
+      }
+
+      .hero p {
+        font-size: 4vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Discover my latest projects, creative designs, and development works. Scroll down to explore more.</p>
+    <button>View Projects</button>
+  </section>
+
+</body>
+</html>
