@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Flip Effect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f3f4f6;
+      font-family: "Poppins", sans-serif;
+      perspective: 1000px;
+    }
+
+    .card {
+      width: 250px;
+      height: 350px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; 
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.3rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-front {
+      background: #4f46e5;
+    }
+
+    .card-back {
+      background: #10b981;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-face card-front">
+      FRONT SIDE
+    </div>
+    <div class="card-face card-back">
+      BACK SIDE
+    </div>
+  </div>
+
+</body>
+</html>

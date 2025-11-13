@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Animation Example</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .moving-text {
+      font-size: 2em;
+      font-weight: bold;
+      color: #333;
+      position: relative;
+      animation: moveText 4s linear infinite;
+    }
+
+
+    @keyframes moveText {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: 200px;
+      }
+      100% {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="moving-text">Moving Text Animation</div>
+
+</body>
+</html>

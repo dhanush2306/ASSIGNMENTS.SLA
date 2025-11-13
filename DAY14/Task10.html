@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Cards with Hover Transition</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #111827;
+    }
+
+    .card-content p {
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/260x180" alt="Project 1">
+    <div class="card-content">
+      <h3>Web Design</h3>
+      <p>Modern responsive website design for a digital agency.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/260x180/4f46e5/ffffff" alt="Project 2">
+    <div class="card-content">
+      <h3>Mobile App UI</h3>
+      <p>Clean and minimal mobile interface built with Figma.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/260x180/10b981/ffffff" alt="Project 3">
+    <div class="card-content">
+      <h3>Product Branding</h3>
+      <p>Logo and packaging design for a new eco-friendly brand.</p>
+    </div>
+  </div>
+
+</body>
+</html>
