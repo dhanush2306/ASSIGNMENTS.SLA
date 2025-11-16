@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Evolution</title>
+    <style>
+        #infobox{
+            margin: 70%;
+            padding: 10px;
+            border: 2px solid black ;
+            border-radius: 10px;
+                margin-top: 15px;
+                font-size: 18px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h2>Javascript Evolution timeline</h2>
+    <button onclick="ShowEvolution()">Read How JS Evolved</button>
+    <div id="infobox"></div>
+    
+            
+
+<script>
+        function showEvolution() {
+            document.getElementById("infoBox").innerHTML = `
+                <h3>📜 Evolution of JavaScript</h3>
+                <p><b>1995:</b> JavaScript was created by Brendan Eich in just 10 days. Originally called Mocha, then LiveScript.</p>
+                
+                <p><b>1996:</b> Renamed to JavaScript and became part of Netscape Navigator browser.</p>
+                
+                <p><b>1997:</b> ECMAScript (ES) was standardized — ES1 was released.</p>
+
+                <p><b>1999:</b> ES3 released — introduced try/catch, regex, and more.</p>
+
+                <p><b>2009:</b> ES5 launched — added JSON support, strict mode, array methods (map, filter, reduce).</p>
+
+                <p><b>2015:</b> ES6 (ECMAScript 2015) — the biggest update ever:
+                    <ul>
+                        <li>let and const</li>
+                        <li>Classes</li>
+                        <li>Arrow functions</li>
+                        <li>Promises</li>
+                        <li>Template literals</li>
+                        <li>Modules</li>
+                    </ul>
+                </p>
+
+                <p><b>2016–2024:</b> Yearly updates added async/await, optional chaining, BigInt, modules, and modern features.</p>
+
+                <p><b>Today:</b> JavaScript powers websites, mobile apps, desktop apps, servers (Node.js), and even AI tools.</p>
+
+                <p><b>Future:</b> Faster engines, better performance, stronger typing (TypeScript influence), and improved browser APIs.</p>
+            `;
+        }
+    </script>
+
+   
+</body>
+</html>
