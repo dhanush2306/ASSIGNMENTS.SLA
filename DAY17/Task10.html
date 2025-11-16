@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String + Number Experiment</title>
+</head>
+<body>
+
+    <h2>Combining Strings and Numbers</h2>
+    <button onclick="combine()">Try Experiment</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        function combine() {
+            let result1 = "Age: " + 20;          
+            let result2 = "Score: " + 10 + 5;    
+            let result3 = 10 + 5 + " Points";   
+            let result4 = "Value: " + (10 + 5);  
+
+            let text = "";
+            text += result1 + "\n";
+            text += result2 + "\n";
+            text += result3 + "\n";
+            text += result4 + "\n";
+
+            document.getElementById("output").textContent = text;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Null & Undefined Example</title>
+</head>
+<body>
+
+    <h2>Null and Undefined Variables</h2>
+    <button onclick="showValues()">Show Values</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        function showValues() {
+            var emptyValue = null;      
+            var notAssigned;             
+
+            let text = "";
+            text += "Null variable: " + emptyValue + "\n";
+            text += "Undefined variable: " + notAssigned + "\n";
+
+            document.getElementById("output").textContent = text;
+        }
+    </script>
+
+</body>
+</html>

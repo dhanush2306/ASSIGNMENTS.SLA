@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reassigning variables</title>
+</head>
+<body>
+    <h2>Reassign variables</h2>
+    <button onclick="testreassign()">Try Reassigning</button>
+   <p id="result"></p>
+    <script>
+        function testreassign (){
+            let output = "";
+            try{
+var a = 10;
+a = 20;
+output+="var reassigned successfully:"+a+"<br>";
+
+            
+            }
+            catch (error) {
+                output +="var error:"+error+ "<br>";
+            }
+            try{
+                let b=30;
+                b=40;   
+                    output+="let reassigned successfully:"+b+"<br>";
+
+            }
+            catch(errorP){
+                output+="let error"+error+"<br>";
+
+            }
+            try{
+                const c = 50;
+                c = 80;
+                output+="const reassigned :"+c+"<br>"
+            }
+            catch(error){
+                output+="const error"+error+"<br>";
+            }
+            document.getElementById("result").innerHTML = output    ;
+            
+        }  
+    </script>
+</body>
+</html>

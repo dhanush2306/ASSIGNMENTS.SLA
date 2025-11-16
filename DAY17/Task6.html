@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Info</title>
+</head>
+<body>
+
+    <h2>Student Information</h2>
+    <button onclick="showStudent()">Show Student Details</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        function showStudent() {
+            
+            var studentName = "Dhanush";
+            var age = 21;
+            var course = "Full Stack Development";
+            var isEnrolled = true;
+
+            
+            let text = "";
+            text += "Name: " + studentName + "\n";
+            text += "Age: " + age + "\n";
+            text += "Course: " + course + "\n";
+            text += "Enrolled: " + isEnrolled + "\n";
+
+            document.getElementById("output").textContent = text;
+        }
+    </script>
+
+</body>
+</html>

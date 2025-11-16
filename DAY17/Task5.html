@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Typing in JavaScript</title>
+</head>
+<body>
+
+    <h2>Assign Number → Then String to Same Variable</h2>
+    <button onclick="testVariable()">Test Variable</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        function testVariable() {
+            let x = 100;  
+            let result = "Step 1:\n";
+            result += "x = " + x + " (type: " + typeof x + ")\n\n";
+
+            x = "Hello JS";  
+            result += "Step 2:\n";
+            result += "x = " + x + " (type: " + typeof x + ")";
+
+            document.getElementById("output").textContent = result;
+        }
+    </script>
+
+</body>
+</html>

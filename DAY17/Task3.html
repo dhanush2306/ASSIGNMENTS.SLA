@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript data types</title>
+
+</head>
+<body>
+   <h2>JavaScript Data types</h2> 
+   <button onclick="Showdatatypes">Show Data types</button>
+   <pre id="output"></pre>
+   <script>
+function Showdatatypes(){
+    var str = "Hello sir";
+    var num = 40;
+    var bool = true;
+    var undef = null;
+    var nul = null;
+    var obj = {name : " Dhanush"};
+    var arr = [1, 2, 3, 4 , 5];
+    var func = function(){};
+    var big = 123456789257638783576;
+    var sym = symbol("id");
+
+    let outputText = "";
+     outputText +="string:"+typeof str + "/n";
+     outputText +="number"+typeof num + "/n";
+     outputText +="boolean"+typeof bool + "/n";
+     outputText +="undefined"+typeof undef + "/n";
+     outputText +="null"+typeof nul + "(special case/null";
+     outputText +="undefined"+typeof undef + "/n";
+     outputText +="objects"+typeof obj + "/n";
+     outputText +="arrays"+typeof arr +"array are objects/n";
+     outputText +="function"+typeof func +"/n";
+     outputText +="bigInt"+typeof big +"/n";
+     outputText +="symbol"+typeof sym +"/n";
+      
+     document.getElementById("output").textContent = outputText;
+}
+   </script>
+</body>
+</html>

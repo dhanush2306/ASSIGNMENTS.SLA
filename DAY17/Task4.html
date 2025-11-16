@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typeof Example</title>
+</head>
+<body>
+
+    <h2>Check Variable Types Using typeof</h2>
+    <button onclick="checkTypes()">Check Types</button>
+
+    <pre id="result"></pre>
+
+    <script>
+        function checkTypes() {
+
+           
+            var name = "Dhanush";      
+            var age = 21;              
+            var isStudent = true;       
+            var address;                
+            var salary = null;          
+            var skills = ["HTML", "CSS"];
+            var details = { city: "Chennai" }; 
+            var greet = function() {}; 
+            var bigNumber = 987654321987654321n;
+            var id = Symbol("id123");   
+
+           
+            let out = "";
+            out += "name: " + typeof name + "\n";
+            out += "age: " + typeof age + "\n";
+            out += "isStudent: " + typeof isStudent + "\n";
+            out += "address: " + typeof address + "\n";
+            out += "salary (null): " + typeof salary + " (special case)\n";
+            out += "skills (array): " + typeof skills + "\n";
+            out += "details (object): " + typeof details + "\n";
+            out += "greet (function): " + typeof greet + "\n";
+            out += "bigNumber: " + typeof bigNumber + "\n";
+            out += "id (symbol): " + typeof id + "\n";
+
+           
+            document.getElementById("result").textContent = out;
+        }
+    </script>
+
+</body>
+</html>

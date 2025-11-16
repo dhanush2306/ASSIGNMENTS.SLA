@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable declaration</title>
+</head>
+<body>
+    <h2>Declare variables in JavaScript </h2>
+    <button onclick="showvariables()"> Show variables</button>
+    <p id="output"></p>
+    <script>
+        function showvariables(){
+            var Name = "Dhanush";
+            let age = "20";
+            const city = "Chennai"
+            document.getElementById("output").innerHTML =
+            "Name (var):"+Name +"<br>"+
+            "age (let):" + age + "<br>"+
+            "city (const):" + city + "<br>"
+        }
+        
+    </script>
+</body>
+</html>
