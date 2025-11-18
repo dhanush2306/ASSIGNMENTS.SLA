@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favorite Color Switch</title>
+</head>
+<body>
+
+    <h2>Favorite Color Checker (Using switch)</h2>
+
+    <button onclick="checkColor()">Enter Favorite Color</button>
+
+    <script>
+        function checkColor() {
+            let color = prompt("What is your favorite color?").toLowerCase();
+            let message = "";
+
+            switch (color) {
+                case "red":
+                    message = "Red is a color of energy and passion!";
+                    break;
+                case "blue":
+                    message = "Blue is calm and peaceful.";
+                    break;
+                case "green":
+                    message = "Green represents nature and growth!";
+                    break;
+                case "yellow":
+                    message = "Yellow is bright and full of happiness!";
+                    break;
+                case "black":
+                    message = "Black is elegant and powerful.";
+                    break;
+                default:
+                    message = "Nice! That's a unique color!";
+            }
+
+            alert(message);
+        }
+    </script>
+
+</body>
+</html>

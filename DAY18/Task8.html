@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Security Check</title>
+</head>
+<body>
+
+    <h2>Check if Password is Secure</h2>
+
+    <input type="password" id="pwd" placeholder="Enter your password">
+    <button onclick="checkPassword()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkPassword() {
+            let password = document.getElementById("pwd").value;
+            let message = "";
+
+            if (password.length >= 8) {
+                message = "Your password is secure!";
+            } else {
+                message = "Password is too short! It must be at least 8 characters.";
+            }
+
+            document.getElementById("result").innerHTML = message;
+        }
+    </script>
+
+</body>
+</html>

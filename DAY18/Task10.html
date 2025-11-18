@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested IF Login System</title>
+</head>
+<body>
+
+    <h2>Login System (Nested IF)</h2>
+
+    <input type="text" id="username" placeholder="Enter username"><br><br>
+    <input type="password" id="password" placeholder="Enter password"><br><br>
+
+    <button onclick="login()">Login</button>
+
+    <p id="result"></p>
+
+    <script>
+        function login() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+
+      
+            let correctUser = "admin";
+            let correctPass = "12345";
+
+            if (user === correctUser) {
+                if (pass === correctPass) {
+                    document.getElementById("result").innerHTML = "Login Successful!";
+                } else {
+                    document.getElementById("result").innerHTML = "Wrong Password!";
+                }
+            } else {
+                document.getElementById("result").innerHTML = "Wrong Username!";
+            }
+        }
+    </script>
+
+</body>
+</html>

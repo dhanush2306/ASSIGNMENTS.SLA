@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Driving Eligibility</title>
+</head>
+<body>
+
+    <h2>Driving Eligibility Check (Using prompt)</h2>
+
+    <button onclick="checkDriving()">Check If You Can Drive</button>
+
+    <script>
+        function checkDriving() {
+            let age = prompt("Enter your age:");
+            age = Number(age);
+
+            if (age >= 18) {
+                alert("You are eligible to drive!");
+            } else if (age > 0) {
+                alert("You are NOT eligible to drive.");
+            } else {
+                alert("Invalid age entered.");
+            }
+        }
+    </script>
+
+</body>
+</html>
