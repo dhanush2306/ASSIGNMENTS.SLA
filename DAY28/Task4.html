@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read JSON from localStorage</title>
+</head>
+<body>
+    <h1>Read JSON from localStorage</h1>
+
+    <script>
+
+        const user = {
+            name: "Alice",
+            age: 25,
+            course: "JavaScript"
+        };
+        localStorage.setItem("user", JSON.stringify(user));
+
+        const userJSON = localStorage.getItem("user");
+
+
+        const storedUser = JSON.parse(userJSON);
+
+     
+        console.log("Retrieved User Object:", storedUser);
+    </script>
+</body>
+</html>

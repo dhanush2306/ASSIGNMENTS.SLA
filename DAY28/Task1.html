@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Example</title>
+</head>
+<body>
+    <h1>LocalStorage Demo</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="text" id="course" placeholder="Enter your course">
+    <button id="saveBtn">Save</button>
+
+    <h2>Stored Data:</h2>
+    <p id="storedName"></p>
+    <p id="storedCourse"></p>
+
+    <script>
+        const nameInput = document.getElementById("name");
+        const courseInput = document.getElementById("course");
+        const saveBtn = document.getElementById("saveBtn");
+        const storedName = document.getElementById("storedName");
+        const storedCourse = document.getElementById("storedCourse");
+
+   
+        function displayStoredData() {
+            const name = localStorage.getItem("name");
+            const course = localStorage.getItem("course");
+
+            storedName.textContent = name ? `Name: ${name}` : "Name not stored";
+            storedCourse.textContent = course ? `Course: ${course}` : "Course not stored";
+        }
+
+  
+        displayStoredData();
+
+     
+        saveBtn.addEventListener("click", () => {
+            localStorage.setItem("name", nameInput.value);
+            localStorage.setItem("course", courseInput.value);
+            displayStoredData();
+        });
+    </script>
+</body>
+</html>

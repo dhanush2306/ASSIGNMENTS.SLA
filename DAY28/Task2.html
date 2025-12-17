@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SessionStorage Example</title>
+</head>
+<body>
+    <h1>SessionStorage Demo</h1>
+
+    <p id="sessionTime"></p>
+
+    <script>
+        const sessionTimeDisplay = document.getElementById("sessionTime");
+
+
+        function storeSessionTime() {
+            const currentTime = new Date().toLocaleTimeString();
+            sessionStorage.setItem("sessionTime", currentTime);
+        }
+
+
+        function displaySessionTime() {
+            const storedTime = sessionStorage.getItem("sessionTime");
+            if (storedTime) {
+                sessionTimeDisplay.textContent = `Your session started at: ${storedTime}`;
+            } else {
+                sessionTimeDisplay.textContent = "Session time not stored yet.";
+            }
+        }
+
+     
+        if (!sessionStorage.getItem("sessionTime")) {
+            storeSessionTime();
+        }
+
+      
+        displaySessionTime();
+    </script>
+</body>
+</html>
