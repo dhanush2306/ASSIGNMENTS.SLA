@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic List</title>
+</head>
+<body>
+
+  <ul id="myList"></ul>
+  <button onclick="addItems()">Add Items</button>
+
+  <script>
+    function addItems() {
+      const list = document.getElementById("myList");
+
+      const items = ["Apple", "Banana", "Orange"];
+
+      items.forEach(itemText => {
+        const li = document.createElement("li");
+        li.textContent = itemText;
+        list.appendChild(li);
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prevent Form Reload</title>
+</head>
+<body>
+
+  <form id="myForm">
+    <input type="text" placeholder="Enter name" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      message.innerText = "Form submitted successfully!";
+    });
+  </script>
+
+</body>
+</html>
