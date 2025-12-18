@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Text & Color</title>
+
+ 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h2 id="message">Hello World</h2>
+    <button id="changeBtn">Change Text & Color</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#changeBtn").click(function () {
+                $("#message")
+                    .text("Text changed using jQuery!")
+                    .css("color", "blue");
+            });
+        });
+    </script>
+
+</body>
+</html>

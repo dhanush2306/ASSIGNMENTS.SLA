@@ -1,0 +1,8 @@
+DELIMITER $$
+
+CREATE PROCEDURE PrintAllStudents()
+BEGIN
+    SELECT * FROM students;
+END $$
+
+DELIMITER ;

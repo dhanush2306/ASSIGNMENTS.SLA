@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery CDN Example</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h1 id="text">Hello World</h1>
+    <button id="btn">Click me</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#text").text("jQuery is working!");
+            });
+        });
+    </script>
+
+</body>
+</html>

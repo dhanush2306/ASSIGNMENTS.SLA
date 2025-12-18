@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide Up & Down</title>
+
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        #panel {
+            width: 300px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border: 1px solid #90caf9;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="slideBtn">Toggle Panel</button>
+
+    <div id="panel">
+        This panel slides up and down using jQuery.
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#slideBtn").click(function () {
+                $("#panel").slideToggle();
+            });
+        });
+    </script>
+
+</body>
+</html>
