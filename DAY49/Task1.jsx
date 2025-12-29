@@ -1,0 +1,1 @@
+// Redux is a state management library for JavaScript applications, commonly used with React. Its main purpose is to help manage shared state in a predictable and organized way, especially as your app grows bigger.

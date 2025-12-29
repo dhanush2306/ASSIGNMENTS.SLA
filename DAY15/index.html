@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Card Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .card-content button {
+      padding: 10px 20px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .card-content button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Card Image">
+    <div class="card-content">
+      <h2>Modern Card</h2>
+      <p>This is a sleek card design with hover effects. Perfect for portfolios or blogs.</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+
+</body>
+</html>

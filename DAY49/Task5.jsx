@@ -1,0 +1,1 @@
+// Redux uses a unidirectional data flow, meaning data moves in one direction only.
